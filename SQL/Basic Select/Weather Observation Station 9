@@ -1,0 +1,7 @@
+Q17:
+    Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
+SOLVE:
+-- SOLVE WIHT SQL SERVER
+    SELECT DISTINCT CITY 
+    FROM STATION
+    WHERE CITY NOT LIKE '[aeiou]%'
