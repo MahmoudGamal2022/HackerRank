@@ -1,4 +1,4 @@
-Q7:
+Q6:
     Query the difference between the maximum and minimum populations in CITY.
 SOLVE:
     SELECT MAX(POPULATION) - MIN(POPULATION)
