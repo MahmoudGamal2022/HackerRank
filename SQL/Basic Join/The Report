@@ -1,0 +1,20 @@
+Q4:
+
+SOLVE: SQL SERVER
+      select 
+      case 
+          when Grades.Grade  >= 8 then Students.Name 
+          else Null end , Grades.Grade, Students.Marks
+
+      from Students, Grades
+      WHERE STUDENTS.MARKS BETWEEN GRADES.MIN_MARK AND GRADES.MAX_MARK
+      ORDER BY GRADES.GRADE DESC, STUDENTS.NAME;
+      
+SOLVE: MYSQL
+
+      select 
+      IF( Grades.Grade  >= 8 , Students.Name ,NULL), Grades.Grade, Students.Marks
+
+      from Students, Grades
+      WHERE STUDENTS.MARKS BETWEEN GRADES.MIN_MARK AND GRADES.MAX_MARK
+      ORDER BY GRADES.GRADE DESC, STUDENTS.NAME;
